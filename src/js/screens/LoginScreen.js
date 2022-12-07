@@ -8,11 +8,12 @@ const LoginScreen = ({ setIsLogedin }) => {
           setIsLogedin(true)
         }}>
           <h1>로그인</h1>
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required />
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required />
-          <button type="submit" className="btn">Login</button>
+          <label for="email"><b>아이디</b></label>
+          <input type="text" placeholder="아이디" name="email" required />
+          <label for="psw"><b>비밀번호</b></label>
+          <input type="password" placeholder="비밀번호" name="psw" required />
+          <button type="submit" className="btn">로그인</button>
+        <p>* 회원가입이 필요할 경우 관리자에게 문의하십시오.</p>
         </form>
       </div>
   
@@ -20,3 +21,11 @@ const LoginScreen = ({ setIsLogedin }) => {
   }
 
 export default LoginScreen;
+
+
+
+/**
+ * 
+ * 식당이름?
+ * 
+ */

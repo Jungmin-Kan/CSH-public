@@ -49,7 +49,12 @@
     }
   },
   "dependencies": {
+    "chart.js": "^3.9.1",
     "electron-squirrel-startup": "^1.0.0",
+    "faker": "^6.6.6",
+    "primeicons": "^6.0.1",
+    "primereact": "^8.7.1",
+    "react-chartjs-2": "^4.3.1",
     "react-router-dom": "^6.4.2"
   },
   "devDependencies": {

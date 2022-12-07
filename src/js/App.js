@@ -12,6 +12,11 @@ import LoginScreen from './screens/LoginScreen';
 import NoticeListScreen from './screens/NoticeListScreen';
 import RestaurantListScreen from './screens/RestaurantListScreen';
 
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";         
+import '../css/App.css';
+
 
 
 const App = () => {

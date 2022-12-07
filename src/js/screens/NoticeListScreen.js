@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import DataTableNoticeComponent from '../component/DataTableNoticeComponent';
+
 const NoticeListScreen = () => {
     return (
         <div>
-            <h2>NoticeListScreen</h2>
+            준비중
+            <DataTableNoticeComponent title={'공지리스트'}/>
         </div>
     );
 }
