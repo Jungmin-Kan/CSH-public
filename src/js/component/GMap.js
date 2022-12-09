@@ -51,7 +51,7 @@ const GMapComponent = ({ marker }) => {
         loadGoogleMaps(() => {
             setTimeout(() => {
                 setGoogleMapsReady(true);
-            }, 5000);
+            }, 1000);
         });
         return () => {
             removeGoogleMaps();

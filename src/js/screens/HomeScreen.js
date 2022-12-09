@@ -42,7 +42,7 @@ const HomeScreen = () => {
     
         setTimeout(() => {
             setMarker(buffer);
-        }, 5000);
+        }, 1000);
     }
 
     const _geoCode = async(address, name) =>{
@@ -60,6 +60,7 @@ const HomeScreen = () => {
         });
         return markerObject;
     }
+
 
     return (
         <div>
@@ -85,7 +86,8 @@ const HomeScreen = () => {
                 <div>단말기 위치설정 중 입니다...</div></div>}
             </div>
             <div style={{padding:10}}>
-                <CalendarComponent dataList={[]}/>
+                {marker.length ? <CalendarComponent originData={data}/> : <div style={{width:'100%', textAlign:'center'}}><ProgressSpinner/>
+                <div>날짜 설정 중 입니다...</div></div>}
             </div>
             <div style={{padding:10, flexDirection:'row', display:'flex', alignItems:'center'}}>
                 <div style={{width:35, height:35, borderRadius:50, backgroundColor:'red', display:'inline-block'}}></div>
